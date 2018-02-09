@@ -1,0 +1,19 @@
+{
+  "name": "webweu02-projekt",
+  "version": "1.0.0",
+  "description": "webbutveckling 2 projekt",
+  "main": "index.js",
+  "scripts": {
+    "test": "Cx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sneaky-in-lane-LUL/WEBWEU02-projekt.git"
+  },
+  "author": "Erik Werkelin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sneaky-in-lane-LUL/WEBWEU02-projekt/issues"
+  },
+  "homepage": "https://github.com/Sneaky-in-lane-LUL/WEBWEU02-projekt#readme"
+}
