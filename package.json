@@ -1,5 +1,5 @@
 {
-  "name": "webweu02-projekt",
+  "name": "projekt",
   "version": "1.0.0",
   "description": "webbutveckling 2 projekt",
   "main": "index.js",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Sneaky-in-lane-LUL/WEBWEU02-projekt/issues"
   },
-  "homepage": "https://github.com/Sneaky-in-lane-LUL/WEBWEU02-projekt#readme"
+  "homepage": "https://github.com/Sneaky-in-lane-LUL/WEBWEU02-projekt#readme",
+  "keywords": [
+    "projekt"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }

@@ -24,10 +24,22 @@ body {
           text-decoration: none; }
           body header .nav-bar .nav-bar-child a:hover {
             color: #FFFFFF; }
+        body header .nav-bar .nav-bar-child:last-child {
+          padding-top: 0; }
+      body header .nav-bar .nav-bar-dropdown-menu {
+        height: 15px;
+        width: 20px;
+        background-image: linear-gradient(#FFFFFF, #FFFFFF 20%, transparent 20%, transparent 40%, #FFFFFF 40%, #FFFFFF 60%, transparent 60%, transparent 80%, #FFFFFF 80%, #FFFFFF); }
+      body header .nav-bar #panel, body header .nav-bar #flip {
+        margin-top: 10px; }
+      body header .nav-bar #panel {
+        padding: 50px;
+        display: none; }
   body .image {
+    grid-area: image;
     margin-top: -40px;
     background-size: cover;
-    background: url(../Bilder/LateAutumn_1920x1080.jpg); }
+    background: url(../Bilder/PupsPlayGalapagos_1920x1080.jpg); }
   body footer {
     grid-area: footer;
     background-color: #333333;

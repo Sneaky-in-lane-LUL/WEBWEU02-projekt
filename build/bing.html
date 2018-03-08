@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideToggle("slow");
+                });
+            });
+    </script>
     <link rel="stylesheet" href="css/bing.css">
     <title>Document</title>
 </head>
@@ -35,17 +43,24 @@
             <div class="nav-bar-child">
                 <a href="#">Outlook.com</a>
             </div>
-        </div>
-        <!--<div class="nav-dropdown-menu-grid">
-            <div class="nav-dropdown-menu-grid-child">English</div>
-            <div class="nav-dropdown-menu-grid-child">Logga in</div>
-            <div class="nav-dropdown-menu-grid-child">
-             <div class="nav-dropdown-menu">Inställningar</div>
-                    <div class="nav-dropdown-menu-child">Sökhistorik</div>
-                    <div class="nav-dropdown-menu-child">Mina sparade</div>
-                    <div class="nav-dropdown-menu-child">Feedback</div>
-                    <div class="nav-dropdown-menu-child">Säker sökning</div>
-                <div class="nav-dropdown-menu-child">Anpassa din startsida</div> -->
+            <div class="nav-bar-child"></div> <!-- for the spaces (1/3) -->
+            <div class="nav-bar-child"></div> <!-- for the spaces (2/3) -->
+            <div class="nav-bar-child"></div> <!-- for the spaces (3/3) -->
+            <div class="nav-bar-child">
+                <a href="#">English</a>
+            </div>
+            <div class="nav-bar-child">
+                <a href="#">Logga in</a>
+            </div>
+            <div class="nav-bar-child nav-bar-dropdown-menu" id="flip">
+                <div id="panel">
+                    <div class="nav-bar-dropdown-menu-child">Inställningar</div>
+                    <div class="nav-bar-dropdown-menu-child">Sökhistorik</div>
+                    <div class="nav-bar-dropdown-menu-child">Mina sparade</div>
+                    <div class="nav-bar-dropdown-menu-child">Feedback</div>
+                    <div class="nav-bar-dropdown-menu-child">Säker sökning</div>
+                    <div class="nav-bar-dropdown-menu-child">Anpassa din startsida</div>
+                </div>
             </div>
         </div>
     </header> 

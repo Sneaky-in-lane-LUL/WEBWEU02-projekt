@@ -25,7 +25,7 @@ body {
                 font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
                 padding-top: 10px;
                 z-index: 1;
-            
+
                 a {
                     color: #fff;
                     text-decoration: none;
@@ -34,14 +34,46 @@ body {
                         color: #FFFFFF;
                     }
                 }
+
+                &:last-child{
+                    padding-top: 0;
+                }
+            }
+
+
+            .nav-bar-dropdown-menu {
+                height: 15px;
+                width: 20px;
+                background-image: linear-gradient(
+                    #FFFFFF,
+                    #FFFFFF 20%,
+                    transparent 20%,
+                    transparent 40%,
+                    #FFFFFF 40%,
+                    #FFFFFF 60%,
+                    transparent 60%,
+                    transparent 80%,
+                    #FFFFFF 80%,
+                    #FFFFFF
+                );
+            }
+
+            #panel, #flip {
+                margin-top: 10px;
+            }
+            
+            #panel {
+                padding: 50px;
+                display: none;
             }
         }
     }
 
 .image {
+    grid-area: image;
     margin-top: -40px;
     background-size: cover;
-    background: url(../Bilder/LateAutumn_1920x1080.jpg);
+    background: url(../Bilder/PupsPlayGalapagos_1920x1080.jpg);
 }
 
     footer {

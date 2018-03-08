@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 119px 1fr 30px;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    min-height: 100vh;
+
+    a {
+        text-decoration: none;
+        font-weight: normal;
+    }
+
+    header {
+        grid-area: header;
+        border-bottom: 1px solid #ddd;
+
+        .nav-bar {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: repeat(autofill, minmax(auto, 1fr));
+
+            .nav-bar-child {
+                display: block;
+                text-align: center;
+                font-size: 0.8rem;
+
+                a {
+                    color: #666;
+
+                    &:active {
+                        font-weight: bold;
+                    }
+
+                    
+                }
+                .underline {
+                    text-decoration: none; 
+                    position: relative;    
+             
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        height: 3px;
+                        bottom: -6px;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                        width: 60%;
+                        background: #4A6FA5 ;
+                        -o-transition:.4s;
+                        -ms-transition:.4s;
+                        -moz-transition:.4s;
+                        -webkit-transition:.4s;
+                        transition:.4s;
+                    }
+                  
+                   &:hover:after {
+                       width: 90%;
+                       border-radius:100px;
+                       background: #DE3700;
+                    }
+                }
+            }
+        }
+    }
+
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 10% 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'spacer' 'search-results' 'related';
+
+        &>*{
+            padding: 20px;
+        }
+
+        .spacer {
+            grid-area: spacer search-results related;
+        }
+        
+        .search-results {
+            display: grid;
+            grid-template-columns: 1fr;
+            
+            
+            .result {
+                display: block;
+                padding: 10px;
+
+                cite {
+                    font-style: normal;
+                    color: #006d21;
+                }
+
+                .images-grid {
+                    display: grid;
+                    grid-gap: 20px;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    z-index: 10; //remove when it works as intended
+
+
+
+                    .image {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        box-sizing: border-box;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 12; //remove when it works as intended
+                        
+                        &:nth-of-type(1) {
+                            background: url(../Bilder/banana1.jpg);
+                            z-index:14; //remove when it works as intended
+                        }                        
+                        
+                        &:nth-of-type(2) {
+                            background: url(../Bilder/banana2.jpg);
+                            z-index:14; //remove when it works as intended
+                        }
+
+                        &:nth-of-type(3) {
+                            background: url(../Bilder/banana3.jpg);
+                            z-index:14; //remove when it works as intended
+                        }
+
+                        &:nth-of-type(4) {
+                            background: url(../Bilder/banana4.jpg);
+                            z-index: 14; //remove when it works as intended
+                        }
+
+                        &:nth-of-type(5) {
+                            background: url(../Bilder/banana5.jpg);
+                            z-index:14; //remove when it works as intended
+                        }
+                        &:nth-of-type(6) {
+                            background: url(../Bilder/banana6.jpg);
+                            z-index:14; //remove when it works as intended
+                        }
+                        &:nth-of-type(7) {
+                            background: url(..Bilder/banana7.jpg);
+                            z-index:14; //remove when it works as intended
+                        }
+                        &:nth-of-type(8) {
+                            background: url(..Bilder/banana8.jpg);
+                            z-index:14; //remove when it works as intended
+                        }
+                    }
+                }
+
+                .videos-grid {
+                    display:grid;
+                    grid-gap: 5px;
+                    grid-template-columns: repeat(auto-fll minmax(100px, 1fr));
+                    grid-template-rows: 1fr;
+                    grid-auto-flow: dense row;
+                    grid-auto-flow: column;
+
+                    
+                }
+            }
+        }
+
+        .related {
+            
+            h2 {
+                color: #666;
+                padding: 10px 0px;
+                font-weight: normal;
+            }
+
+            .related-links {
+                display: grid;
+                grid-template-columns: 1fr;
+                    
+
+                a {
+                    font-weight: bold;
+
+                    &::first-letter {
+                    text-transform: uppercase;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    footer {
+    grid-area: footer;
+    left: 0;
+    bottom: 0;
+    background-color: #ECECEC;        
+
+        .footer-grid {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+
+            .footer-grid-child {
+                display: block;
+                color: #666; // not final  color
+                text-align: center;
+                font-size: 0.8rem;
+                margin: 5px 0px;
+                padding: 0px 5px;
+
+                a {
+                    color: #666; //not final color
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: #9A9A9A; //not final color
+                    }
+                }
+            }
+        }
+    }
+}
